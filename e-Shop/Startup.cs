@@ -1,4 +1,6 @@
-﻿using e_Shop.Models;
+﻿using System.Diagnostics;
+using System.Web.WebPages.Html;
+using e_Shop.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin;
@@ -41,6 +43,9 @@ namespace e_Shop
                     UserManager.AddToRole(user.Id, "Administrator");
                 }
             }
+
+          
+
             if (!roleManager.RoleExists("Collab"))
             {
                 // Se adauga rolul de colaborator

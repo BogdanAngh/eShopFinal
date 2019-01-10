@@ -243,6 +243,7 @@
     <Content Include="Areas\Collab\Views\Items\AddItem.cshtml" />
     <Content Include="Areas\Collab\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Collab\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Collab\Views\Items\Index.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

@@ -86,7 +86,9 @@ namespace e_Shop.Controllers
                     return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
                 case SignInStatus.Failure:
                 default:
-                    ModelState.AddModelError("", "Invalid login attempt.");
+                    var errors = result.ToString();
+                    var message = string.Join(", ", errors);
+                    ModelState.AddModelError("", message);
                     return View(model);
             }
         }
